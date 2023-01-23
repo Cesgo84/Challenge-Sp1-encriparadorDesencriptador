@@ -1,0 +1,12 @@
+.panel-de-entrada {
+	display: inline-block;
+}
+
+.panel-de-salida {
+	float: right;
+
+}
+
+footer p {
+	text-align: center;
+}
