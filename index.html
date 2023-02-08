@@ -3,39 +3,49 @@
 <html lang="es">
 
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title class="tituloPrincipal">Encriptador/Desencriptador ONE</title>
-
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-		<script type="text/javascript" src="script.js"></script>
-	</head>
+		<title>Encriptador/Desencriptador ONE</title>
 
+	</head>
 	<body>
 		<header>
-			<h1>Encriptador/Desencriptador ONE</h1>
+			<img class="logo" src="imagenes/logo.png" alt="logo alura">
+			<!--<h1 class="titulo">Encriptador/Desencriptador ONE</h1>-->
 		</header>	
 
 		<main>
-			<div>
-				<section class="panel-de-entrada">
-					<textarea cols="70" rows="10" class="input-padron" required></textarea>
-					<p>Solo letras minusculas y sin acentos</p>
-					<button>Encriptar</button>
-					<button>Desencriptar</button>
+				<section>
+					<textarea class="text-area" cols="20" rows="10" placeholder="Ingrese su texto aqui"></textarea>
+					<div>
+						<img class="informacion" src="imagenes/Frame-1.png" alt="Solo letras minusculas y sin acentos">
+					</div>
+					<div class="botones">
+						<button  class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+						<button  class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+					</div>
 				</section>
-				<section class="panel-de-salida">
-					<textarea cols="70" rows="10" class="input-padron" required></textarea>
-				</section>
-			</div>
-		</main>
-		<footer>
-			<p>Copyright</p>
-			<p>Contacta me</p>
-			<p>miemail@dominio.com</p>
-		</footer>
-	</body>
 
+				<section>
+					<textarea class="mensaje" cols="20" rows="12"></textarea>
+					<button class="btn-copiar" data-clipboard-target=".mensaje">Copiar</button>
+				</section>
+		</main>
+		<!--<footer>
+				<p class="copyright">&copy Cristian Espinosa - 2023 for Alura ONE</p>
+			<ul>
+				<li>Contact me on:</li>
+				<li><a href="https://github.com/Cesgo84"><img class="redes" src="imagenes/github.png" alt="logo github"></a></li>
+				<li><a href="www.linkedin.com/in/cristián-espinosa-gonzalez"><img class="redes" src="imagenes/linkedin.png" alt="logo linkedin"></a></li>
+			</ul>
+		</footer>-->
+	<script src="dist/clipboard.min.js"></script>
+	<script src="script(2).js"></script>
+	</body>
 </html>
